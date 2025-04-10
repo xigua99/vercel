@@ -8,6 +8,11 @@
     { "source": "/:protocol/:match/:url*", "destination": ":protocol://:match/:url*" },
     { "source": "/:protocol/:match/:url*/", "destination": ":protocol://:match/:url*/" },
     { "source": "/:protocol*/:match/:url*", "destination": ":protocol://:match/:url*" },
-    { "source": "/:protocol*/:match/:url*/", "destination": ":protocol://:match/:url*/" }
+    { "source": "/:protocol*/:match/:url*/", "destination": ":protocol://:match/:url*/" },
+    { "source": "/(.*).css", "destination": "/$1.css" },
+    { "source": "/(.*).js", "destination": "/$1.js" },
+    { "source": "/(.*).png", "destination": "/$1.png" },
+    { "source": "/(.*).jpg", "destination": "/$1.jpg" },
+    { "source": "/(.*).svg", "destination": "/$1.svg" }
   ]
 }
