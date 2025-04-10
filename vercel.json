@@ -2,17 +2,17 @@
   "rewrites": [
     { "source": "/https/:match/:url*", "destination": "https://:match/:url*" },
     { "source": "/https/:match/:url*/", "destination": "https://:match/:url*/" },
+    { "source": "/https/:match/:path*", "destination": "https://:match/:path*" },
+    { "source": "/https/:match/:path*/", "destination": "https://:match/:path*/" },
     { "source": "/http/:match/:url*", "destination": "http://:match/:url*" },
     { "source": "/http/:match/:url*/", "destination": "http://:match/:url*/" },
+    { "source": "/http/:match/:path*", "destination": "http://:match/:path*" },
+    { "source": "/http/:match/:path*/", "destination": "http://:match/:path*/" },
     { "source": "/wss/:match/:url*", "destination": "wss://:match/:url*" },
+    { "source": "/wss/:match/:path*", "destination": "wss://:match/:path*" },
     { "source": "/:protocol/:match/:url*", "destination": ":protocol://:match/:url*" },
     { "source": "/:protocol/:match/:url*/", "destination": ":protocol://:match/:url*/" },
     { "source": "/:protocol*/:match/:url*", "destination": ":protocol://:match/:url*" },
-    { "source": "/:protocol*/:match/:url*/", "destination": ":protocol://:match/:url*/" },
-    { "source": "/(.*).css", "destination": "/$1.css" },
-    { "source": "/(.*).js", "destination": "/$1.js" },
-    { "source": "/(.*).png", "destination": "/$1.png" },
-    { "source": "/(.*).jpg", "destination": "/$1.jpg" },
-    { "source": "/(.*).svg", "destination": "/$1.svg" }
+    { "source": "/:protocol*/:match/:url*/", "destination": ":protocol://:match/:url*/" }
   ]
 }
